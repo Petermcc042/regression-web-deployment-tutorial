@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}" type="text/css">
+    </head>
+    <body>
+        <div class="topnav">
+            <a class="active" href="{{ url_for('index') }}">Home</a>
+          </div>
+
+        <div class = "container">
+            <body>
+                <h1>Home Page</h1>
+                <p>Welcome to the home page</p>
+                <p>Please enter hours studied</p>
+
+                <form action="/" method="POST">
+                    <input type="text" name="hours" placeholder="hours">
+                    <input type="submit">
+                </form>
+
+                <p>You should achieve {{mymark}}%</p>
+            </body>
+        </div>
+    </body>
+
+<html>
